@@ -5,17 +5,16 @@ import DeckSelect from './deckSelect/DeckSelect'
 import VictoryConditions from './victoryConditions/VictoryConditions'
 
 
+const setupView = { // steps
+    opponentSelect: <OpponentSelect />,
+    deckSelection: <DeckSelect />,
+    victoryConditions: <VictoryConditions />
+}
+
 const GameSetup = () => {
 
-    const dispatch = useDispatch()
-    const setupString = useSelector((state) => state.setupView)
-    console.log('setupString', setupString)
-
-    const setupView = {
-        opponentSelect: <OpponentSelect />,
-        deckSelection: <DeckSelect />,
-        victoryConditions: <VictoryConditions />
-    }
+    // const dispatch = useDispatch()
+    const currentView = useSelector((state) => state.setupView)
 
     return (
         <div>
@@ -24,7 +23,7 @@ const GameSetup = () => {
             <button onClick={() => dispatch({ type: 'CHANGE_SETUP_VIEW', payload: 'deckSelection' })}>deckSelection</button>
             <button onClick={() => dispatch({ type: 'CHANGE_SETUP_VIEW', payload: 'victoryConditions' })}>victoryConditions</button> */}
 
-            <div>{setupView[setupString]}</div>
+            <div>{setupView[currentView]}</div>
 
         </div>
     )
