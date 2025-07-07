@@ -3,7 +3,7 @@ import { Route, Routes, useLocation } from 'react-router-dom'
 
 import NavigationBar from './navigation/NavigationBar';
 import MenuScreen from './menuScreen/MenuScreen'
-import GameScreen from './gameScreen/GameScreen'
+import GameSetup from './gameSetup/GameSetup';
 
 
 function App() {
@@ -16,7 +16,7 @@ function App() {
       <NavigationBar />
       <Routes location={location} key={location.pathname}>
         <Route path='/' element={<MenuScreen/>} />
-        <Route path='/gameScreen' element={<GameScreen/>} />
+        <Route path='/gameSetup' element={<GameSetup/>} />
 
       </Routes>
 

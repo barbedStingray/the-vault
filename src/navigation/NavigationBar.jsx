@@ -5,7 +5,7 @@ const NavigationBar = () => {
   return (
     <div>
       <Link to='/'>Menu</Link>
-      <Link to='/GameScreen'>Play Game</Link>
+      <Link to='/gameSetup'>Game Setup</Link>
     </div>
   )
 }

@@ -1,8 +1,10 @@
 import { combineReducers } from 'redux';
-import gameView from './gamePlay/gameView.reducer';
+import setupView from './gamePlay/setupView.reducer';
+import twoPlayerGame from './gamePlay/twoPlayerGame.reducer';
 
 const rootReducer = combineReducers({
-    gameView,
+    setupView,
+    twoPlayerGame,
     
 });
 

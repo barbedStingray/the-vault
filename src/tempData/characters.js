@@ -4,6 +4,83 @@
 // ? cant write an ability that targets the same attribute twice ?
 // two groups that equate to EVERY might be tough...? 
 
+
+export const bensDeck = [
+    {
+        id: 1,
+        character: 'Scuttle',
+        color: 'Orange',
+        points: 3,
+        // cardTitle: 'Scuttles Dinglehopper',
+        // gender: 'Male',
+        // movie: 'The Little Mermaid',
+        // kind: 'Bird',
+        // groups: [],
+        // bonusPoints: 0,
+        // role: 'Sidekick',
+        // rarity: 'Mythic',
+        // isActive: true,
+        // cardStatus: {},
+        // toonImage: 'https://res.cloudinary.com/dzh1qe1zp/image/upload/v1725469394/dToons/theLittleMermaid/Scuttle/scuttle_simpleImage.png',
+    },
+    {
+        id: 2,
+        character: 'Ariel',
+        color: 'White',
+        points: 8,
+        // cardTitle: 'Part of Your World',
+        // gender: 'Female',
+        // movie: 'The Little Mermaid',
+        // kind: 'Mermaid',
+        // groups: [],
+        // bonusPoints: 0,
+        // role: 'Sidekick',
+        // rarity: 'Mythic',
+        // isActive: true,
+        // cardStatus: {},
+        // toonImage: 'https://res.cloudinary.com/dzh1qe1zp/image/upload/v1725469394/dToons/theLittleMermaid/Scuttle/scuttle_simpleImage.png',
+    },
+]
+
+export const evilDeck = [
+    {
+        id: 100,
+        character: 'Ursula',
+        color: 'Black',
+        points: 7,
+        // cardTitle: 'Part of Your World',
+        // gender: 'Female',
+        // movie: 'The Little Mermaid',
+        // kind: 'Mermaid',
+        // groups: [],
+        // bonusPoints: 0,
+        // role: 'Sidekick',
+        // rarity: 'Mythic',
+        // isActive: true,
+        // cardStatus: {},
+        // toonImage: 'https://res.cloudinary.com/dzh1qe1zp/image/upload/v1725469394/dToons/theLittleMermaid/Scuttle/scuttle_simpleImage.png',
+    },
+    {
+        id: 101,
+        character: 'Flotsam',
+        color: 'Green',
+        points: 2,
+        // cardTitle: 'Part of Your World',
+        // gender: 'Female',
+        // movie: 'The Little Mermaid',
+        // kind: 'Mermaid',
+        // groups: [],
+        // bonusPoints: 0,
+        // role: 'Sidekick',
+        // rarity: 'Mythic',
+        // isActive: true,
+        // cardStatus: {},
+        // toonImage: 'https://res.cloudinary.com/dzh1qe1zp/image/upload/v1725469394/dToons/theLittleMermaid/Scuttle/scuttle_simpleImage.png',
+    },
+]
+
+
+
 const dToons = [
     {
         id: 10,
@@ -293,8 +370,6 @@ const dToons = [
 
 ]
 
-
-module.exports = dToons
 
 
 

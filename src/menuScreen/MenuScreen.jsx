@@ -8,7 +8,8 @@ const MenuScreen = () => {
     <div>
       <h1>MENU Title</h1>
 
-      <Link to='/gameScreen'>Solo Challenge</Link>
+      <Link to='/gameSetup'>Solo Challenge</Link>
+      <Link to='/'>My Decks</Link>
       <Link to='/'>Deck Builder</Link>
       <Link to='/'>Card Library</Link>
 
