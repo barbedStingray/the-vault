@@ -2,6 +2,7 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { evilDeck } from '../../tempData/characters'
 
+// todo this will draw from the existing premade decks from the database
 
 const OpponentSelect = () => {
 

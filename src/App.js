@@ -1,9 +1,10 @@
 import './App.css';
 import { Route, Routes, useLocation } from 'react-router-dom'
 
-import NavigationBar from './navigation/NavigationBar';
+import NavigationBar from './navigation/NavigationBar'
 import MenuScreen from './menuScreen/MenuScreen'
-import GameSetup from './gameSetup/GameSetup';
+import GameSetup from './gameSetup/GameSetup'
+import GameBoard from './gamePlay/GameBoard'
 
 
 function App() {
@@ -17,6 +18,7 @@ function App() {
       <Routes location={location} key={location.pathname}>
         <Route path='/' element={<MenuScreen/>} />
         <Route path='/gameSetup' element={<GameSetup/>} />
+        <Route path='/gameBoard' element={<GameBoard/>} />
 
       </Routes>
 

@@ -5,7 +5,7 @@ const initialState = {
     mode: 'score', // color // bonus (+15)
     colors: [], 
   },
-};
+}
 
 const twoPlayerGame = (state = initialState, action) => {
   switch (action.type) {
@@ -17,8 +17,8 @@ const twoPlayerGame = (state = initialState, action) => {
     default:
       return state;
   }
-};
+}
 
-export default twoPlayerGame;
+export default twoPlayerGame
 
 

@@ -1,41 +1,54 @@
-import React from 'react'
+import React, { useState } from 'react'
 import { useDispatch, useSelector } from 'react-redux'
+import { Link } from 'react-router-dom'
 
 
 const VictoryConditions = () => {
 
+    const dispatch = useDispatch()
 
     const deckOne = useSelector((state) => state.twoPlayerGame.deckOne)
     const deckTwo = useSelector((state) => state.twoPlayerGame.deckTwo)
     const victoryConditions = useSelector((state) => state.twoPlayerGame.victoryConditions)
 
+    const [gameConfirmed, setGameConfirmed] = useState(false)
+    const [revealRandoms, setRevealRandoms] = useState(false)
+    const [randomCards, setRandomCards] = useState({ cardOne: null, cardTwo: null })
+
     const getRandomCard = (deck) => {
         if (!deck || deck.length === 0) return null
-
         const randomIndex = Math.floor(Math.random() * deck.length)
         return deck[randomIndex]
     }
 
-    const randomCardOne = getRandomCard(deckOne)
-    const randomCardTwo = getRandomCard(deckTwo)
-    console.log('randoms', randomCardOne, randomCardTwo)
-
-    // todo determine random card status
-
-    const determineVictoryCondition = (colorOne, colorTwo) => {
-        console.log('victory condition', colorOne, colorTwo)
+    const determineVictoryConditions = (colorOne, colorTwo) => {
         const nonColors = ['Black', 'White', 'Silver'] // todo will be its own file
         const modeMap = { 0: 'color', 1: 'bonus', 2: 'score' }
+
         const count = [colorOne, colorTwo].filter(color => nonColors.includes(color)).length
         const gameMode = modeMap[count] || 'score'
-        console.log('gameMode', gameMode)
         const filteredColors = [colorOne, colorTwo].filter(color => !nonColors.includes(color))
-        console.log('filteredColors', filteredColors)
 
         return {
-            gameMode,
+            mode: gameMode,
             colors: filteredColors,
         }
+    }
+
+    const handleConfirmGame = () => {
+        const cardOne = getRandomCard(deckOne)
+        const cardTwo = getRandomCard(deckTwo)
+        setRandomCards({ cardOne, cardTwo })
+
+        setGameConfirmed(true) // head cards disappear
+
+        // determine and dispatch victory conditions
+        const victory = determineVictoryConditions(cardOne.color, cardTwo.color)
+        dispatch({ type: 'MOD_GAME_PARAMETERS', payload: { victoryConditions: victory } })
+
+        setTimeout(() => {
+            setRevealRandoms(true) // random cards appear
+        }, 2000)
     }
 
 
@@ -43,14 +56,25 @@ const VictoryConditions = () => {
         <div>
             <h1>VICTORY CONDITIONS</h1>
 
-            <p>{randomCardOne?.character}</p>
-            <p>{randomCardTwo?.character}</p>
+            {!gameConfirmed && (
+                <>
+                    <p>{deckOne[0]?.character}</p>
+                    <p>{deckTwo[0]?.character}</p>
+                </>
+            )}
+            {revealRandoms && (
+                <>
+                    <p>{randomCards.cardOne.character}</p>
+                    <p>{randomCards.cardTwo.character}</p>
+                </>
+            )}
 
-            <button onClick={() => determineVictoryCondition(randomCardOne.color, randomCardTwo.color)}>Confirm Game Decks</button>
 
-            <p>Mode: {victoryConditions.mode} - Bonus: {victoryConditions.bonus} - Colors: {victoryConditions.colors}</p>
+            <button onClick={() => handleConfirmGame()}>Confirm Game Decks</button>
 
-            <button>Play Game</button>
+            <p>Mode: {victoryConditions.mode} - | - Colors: {victoryConditions.colors}</p>
+
+            <Link to='/gameBoard'>Play Game</Link>
 
         </div>
     )

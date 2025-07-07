@@ -2,6 +2,8 @@ import React from 'react'
 import { useDispatch, useSelector } from 'react-redux'
 import { bensDeck } from '../../tempData/characters'
 
+// todo this will draw from the database of existing decks
+
 const DeckSelect = () => {
 
     const dispatch = useDispatch()
