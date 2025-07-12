@@ -16,7 +16,7 @@ Every time a card is played, it is called a drop.
 
 **Variants**
 
-    - Self Swap: The card changes positions with another 
+    - Self Swap: The card changes *positions* with another 
     - Targeted Swap two other cards switch places
     - Random Swap: Randomly swaps position
     - Continuous Swap: Swaps position every drop
