@@ -6,8 +6,8 @@ The only exception is board movement cards. They pop once and then done?
 ## Board Effects
 *Abilities that change placement, presence, abilities, or state of cards*
 
-Ability: [Swap]
-    *Ability that changes the placement of a card or cards on the board*
+# Ability: [Swap]
+    **Ability that changes the placement of a card or cards on the board**
 
 **Variants**
 
