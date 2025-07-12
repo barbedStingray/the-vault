@@ -1,0 +1,54 @@
+.gameBoard {
+    border: 2px solid red;
+    width: 600px;
+    height: 350px;
+
+    position: relative;
+    display: flex;
+    flex-flow: column;
+
+}
+
+.scoreBoard {
+    border: 2px solid blue;
+    display: flex;
+    flex-flow: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100px;
+    height: 100%;
+    background-color: grey;
+}
+
+.buttonBar {
+    border: 2px solid lime;
+    display: flex;
+    justify-content: center;
+}
+
+.cardSide {
+    border: 2px solid magenta;
+    flex: 1;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+}
+.cardSlot {
+    border: 2px solid white;
+    width: 80px;
+    height: 50px;
+}
+
+
+.playerHand {
+    border: 2px solid gold;
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 150px;
+    height: 100%;
+    background-color: grey;
+}

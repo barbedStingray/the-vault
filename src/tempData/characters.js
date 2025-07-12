@@ -57,6 +57,23 @@ export const bensDeck = [
         // cardStatus: {},
         // toonImage: 'https://res.cloudinary.com/dzh1qe1zp/image/upload/v1725469394/dToons/theLittleMermaid/Scuttle/scuttle_simpleImage.png',
     },
+    {
+        id: 3,
+        character: 'Prince Eric',
+        color: 'Red',
+        points: 10,
+        // cardTitle: 'Part of Your World',
+        // gender: 'Female',
+        // movie: 'The Little Mermaid',
+        // kind: 'Mermaid',
+        // groups: [],
+        // bonusPoints: 0,
+        // role: 'Sidekick',
+        // rarity: 'Mythic',
+        // isActive: true,
+        // cardStatus: {},
+        // toonImage: 'https://res.cloudinary.com/dzh1qe1zp/image/upload/v1725469394/dToons/theLittleMermaid/Scuttle/scuttle_simpleImage.png',
+    },
 ]
 
 export const evilDeck = [

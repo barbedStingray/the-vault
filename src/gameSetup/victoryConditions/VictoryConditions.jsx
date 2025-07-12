@@ -25,7 +25,9 @@ const VictoryConditions = () => {
         const nonColors = ['Black', 'White', 'Silver'] // todo will be its own file
         const modeMap = { 0: 'color', 1: 'bonus', 2: 'score' }
 
-        const count = [colorOne, colorTwo].filter(color => nonColors.includes(color)).length
+        const count = colorOne === colorTwo
+            ? 1
+            : [colorOne, colorTwo].filter(color => nonColors.includes(color)).length
         const gameMode = modeMap[count] || 'score'
         const filteredColors = [colorOne, colorTwo].filter(color => !nonColors.includes(color))
 
