@@ -7,14 +7,13 @@ The only exception is board movement cards. They pop once and then done?
 *Abilities that change placement, presence, abilities, or state of cards*
 
 # Ability: [Swap]
-    **Ability that changes the placement of a card or cards on the board**
+**Ability that changes the placement of a card or cards on the board**
 
 **Variants**
-
-    - Self Swap: The card changes positions with another 
-    - Targeted Swap two other cards switch places
-    - Random Swap: Randomly swaps position
-    - Continuous Swap: Swaps position every play
+    1. Self Swap: The card changes positions with another 
+    2. Targeted Swap two other cards switch places
+    3. Random Swap: Randomly swaps position
+    4. Continuous Swap: Swaps position every play
 
 **Example Card Texts**
     - [] [self] Swap positions with the *location* card
