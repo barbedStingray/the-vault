@@ -3,10 +3,13 @@ If a card is active, the power is active. No lingering abilities without an acti
 The only exception is board movement cards. They pop once and then done?
 
 
-## Board Effects
+
+## Board-Effects
 *Abilities that change placement, presence, abilities, or state of cards*
 
-### Ability: [Swap]
+---
+
+#### Ability: [Swap]
 *Ability that changes the placement of a card or cards on the board*
 
 **Variants**
@@ -17,19 +20,26 @@ The only exception is board movement cards. They pop once and then done?
     - Continuous Swap: Swaps position every play
 
 **Example Card Texts**
-    - [] [self] Swap positions with the *location* card
+
+    - [] [self] Swap positions with the `location` card
     - [] [self] If *condition* swap positions with the *location* card
 
 ---
 
-==Very important words==
+#### Ability: [Copy]
+*Ability that copies an attribute or multiple from another card*
+
+**Variants**
+
+    - None 
+
+**Example Card Texts**
+
+    - [] Copy another cards *Attribute/s* as your own
 
 
 
 
-
-Ability: [Copy]
-    *Ability that copies an attribute or multiple from another card*
     
 
     - Copy
