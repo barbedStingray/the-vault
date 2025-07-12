@@ -2,17 +2,28 @@
 If a card is active, the power is active. No lingering abilities without an active card.
 The only exception is board movement cards. They pop once and then done?
 
-# Ability Targets
 
-
-# Ability Types
-
-**Board Effects**
+## Board Effects
 *Abilities that change placement, presence, abilities, or state of cards*
-    - Swap
-        Self swap: a card moves itself 
-        Target swap: a card moves to other cards
-        Continuous Swap: card swaps with a random card each play
+
+Ability: [Swap]
+    *Ability that changes the placement of a card or cards on the board*
+
+**Variants**
+    *Self Swap* - The card changes positions with another 
+    *Targeted Swap* - two other cards switch places
+    *Random Swap* - Randomly swaps position
+    *Continuous Swap* - Swaps position every play
+
+**Example Card Texts**
+    - [] [self] Swap positions with the *location* card
+    - [] [self] If *condition* swap positions with the *location* card
+
+
+Ability: [Copy]
+    *Ability that copies an attribute or multiple from another card*
+    
+
     - Copy
         Copies an attribute or multiple from another card. 
         Temp or permanent?
@@ -28,16 +39,14 @@ The only exception is board movement cards. They pop once and then done?
         Remove card from play, can not reanimate
     - ?? Push/Pull
         Forces cards into different slots
-    - ?? Bounce?
-        Sends a card back into their hand
 
 
 **States - Buffs and Debuffs**
 *Positive or negative ongoing effects that apply only while the card is in play*
 *Buffs*
-    - Lucid / Serene
+    - Ascended
         Card is unaffected by any ability
-    - Protection
+    - Protect
         Protects from all ailments and stat decreases.
         Can be per play, or indefinite
     - Immune
@@ -52,6 +61,7 @@ The only exception is board movement cards. They pop once and then done?
         Cannot be targeted for x rounds
     - Lucky
         has a chance to ignore negative effects
+        
     - Endure
         Has a chance to remove negative states each play
 
@@ -68,7 +78,7 @@ The only exception is board movement cards. They pop once and then done?
         card becomes temporarily inactive, can be attacked, but not buffed
         gains +2 points upon waking
     - Freeze
-        Locks in value, can not be buffed or nerfed.
+        Locks in card, can not be buffed or nerfed.
     - Confused / Blind
         Randomly targets another card
     - Weakened
@@ -78,7 +88,6 @@ The only exception is board movement cards. They pop once and then done?
         loses points equal to friendly buffs
     - Exposed
         Takes Bonus damage from negative effects
-
     - Unstable
         Points/color/abilities? are randomly generated each time a card enters play. 
 
@@ -104,33 +113,34 @@ The only exception is board movement cards. They pop once and then done?
         Transforms into another form after x turns
     - Focus
         if card remains unaffected, gain +pts
-    - Rewarded
-        gains points after so many turns
-    - Doomed
-        loses points after so many turns
-    - Crowned
-        Pt bonus if highest/lowest score on the board
-    - Momentum / Radiant
-        +X pts per card played
-        grants adjacent or other cards pts / play
     - Inspired
-        Gains +1 if other cards gain points
+        gains points after so many turns
+        gains xpts per play
+        gains +pts if other cards lose/gain points
+    - Doom
+        loses points after so many turns
+        loses xpts per play
+        loses +pts if other cards lose/gain pts
     - Absorb
         Gains points equal to lost points by other cards
+    - Crowned
+        Pt bonus if highest/lowest score on the board
     - Limit Break
         When points reach X, add/subtract/multiply/manipulate N pts.
     - Reckless
         +3 this turn, -2 the next
+    - Siphon (stealing set pts / play?)
+        converts the difference between this card and target card into bonus points
 
 
 **Exit/Inactive Effects**
 *Effects that trigger when a card becomes inactive*
-    - Attack / mark
+    - Last Stand
         Deals damage when card leaves play
         Applies a status effect on an enemy card/s
-    - Gift / Legacy
+    - Legacy
         Grants pts or buffs when cards leave play
-    - Awaken / Final Form
+    - Final Form / Awaken
         Card comes back after becoming inactive
     - Reanimate
         If card becomes inactive, it can come back weaker
@@ -138,7 +148,7 @@ The only exception is board movement cards. They pop once and then done?
         Reveals an opponents last card
     - Soul
         Transfers its points to another character
-    - Escape
+    - Rebirth
         Returns to players hand when it becomes inactive
     - Grudge
         the card that removed this one suffers a penalty
@@ -152,11 +162,6 @@ The only exception is board movement cards. They pop once and then done?
     - Subtract
     - Multiply
         Multiplies current card points with a maximum of the original toons points
-    - Bank
-        stores points for later use
-    - Siphon (stealing set pts / play?)
-        converts the difference between this card and target card into bonus points
-
 
 
 
