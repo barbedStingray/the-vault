@@ -16,15 +16,15 @@ Every time a card is played, it is called a drop.
 
 **Variants**
 
-    - Self Swap: The card changes *positions* with another 
+    - Self Swap: The card changes positions with another 
     - Targeted Swap two other cards switch places
     - Random Swap: Randomly swaps position
     - Continuous Swap: Swaps position every drop
 
 **Game Card Texts Checklist**
 
- [] [self] Swap positions with the **LOCATION** card
- [] [self] If CONDITION swap positions with the LOCATION card
+    - [] [self] Swap positions with the *LOCATION* card
+    - [] [self] If *CONDITIONs* swap positions with the *LOCATION* card
 
 ---
 
@@ -33,26 +33,44 @@ Every time a card is played, it is called a drop.
 
 **Variants**
 
-    - None 
+    - None
 
 **Example Card Texts**
 
-    - [] Copy another cards ATTRIBUTE as your own
-    - [] Copy another cards ATTRIBUTE as your own for X drops
+    - [] Copy another cards *ATTRIBUTEs* as your own
+    - [] Copy another cards *ATTRIBUTEs* as your own for X drops
 
+---
 
+#### Ability: [Steal]
+*Ability that steals an attribute, removing it from the targeted card*
 
+**Variants**
 
+    - None
+
+**Example Card Texts**
+
+    - [] Steal another cards *ATTRIBUTEs* as your own
+    - [] Steal another cards *ATTRIBUTEs* as your own for X drops
+
+---
+
+#### Ability: [Transform]
+*Ability that transforms a target card into a basic card*
+
+**Variants**
+
+    - None
+
+**Example Card Texts**
+
+    - [] Transforms a target card into a *BASIC CARD* (frog, llama...)
+
+---
 
     
 
-    - Copy
-        Copies an attribute or multiple from another card. 
-        Temp or permanent?
-    - Steal
-        Steals the attribute, remove it from the target.
-    - Transform
-        Transforms another card into a frog? lol
     - Invert
         Swaps a specific attribute, not position
     - Enchant / Imbue
