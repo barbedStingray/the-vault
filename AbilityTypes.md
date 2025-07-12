@@ -10,10 +10,11 @@ Ability: [Swap]
     *Ability that changes the placement of a card or cards on the board*
 
 **Variants**
-    *Self Swap* - The card changes positions with another 
-    *Targeted Swap* - two other cards switch places
-    *Random Swap* - Randomly swaps position
-    *Continuous Swap* - Swaps position every play
+
+    - Self Swap: The card changes positions with another 
+    - Targeted Swap two other cards switch places
+    - Random Swap: Randomly swaps position
+    - Continuous Swap: Swaps position every play
 
 **Example Card Texts**
     - [] [self] Swap positions with the *location* card
@@ -61,7 +62,7 @@ Ability: [Copy]
         Cannot be targeted for x rounds
     - Lucky
         has a chance to ignore negative effects
-        
+
     - Endure
         Has a chance to remove negative states each play
 
