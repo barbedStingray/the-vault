@@ -2,6 +2,8 @@
 If a card is active, the power is active. No lingering abilities without an active card.
 The only exception is board movement cards. They pop once and then done?
 
+Every time a card is played, it is called a drop.
+
 
 
 ## Board-Effects
@@ -17,12 +19,12 @@ The only exception is board movement cards. They pop once and then done?
     - Self Swap: The card changes positions with another 
     - Targeted Swap two other cards switch places
     - Random Swap: Randomly swaps position
-    - Continuous Swap: Swaps position every play
+    - Continuous Swap: Swaps position every drop
 
 **Example Card Texts**
 
-    - [] [self] Swap positions with the `location` card
-    - [] [self] If *condition* swap positions with the *location* card
+    - [] [self] Swap positions with the **LOCATION** card
+    - [] [self] If CONDITION swap positions with the LOCATION card
 
 ---
 
@@ -35,7 +37,9 @@ The only exception is board movement cards. They pop once and then done?
 
 **Example Card Texts**
 
-    - [] Copy another cards *Attribute/s* as your own
+    - [] Copy another cards ATTRIBUTE as your own
+    - [] Copy another cards ATTRIBUTE as your own for X drops
+
 
 
 
