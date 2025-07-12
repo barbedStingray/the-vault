@@ -1,4 +1,4 @@
-### Ability General logic
+# Ability General logic
 If a card is active, the power is active. No lingering abilities without an active card.
 The only exception is board movement cards. They pop once and then done?
 
@@ -6,18 +6,26 @@ The only exception is board movement cards. They pop once and then done?
 ## Board Effects
 *Abilities that change placement, presence, abilities, or state of cards*
 
-# Ability: [Swap]
-**Ability that changes the placement of a card or cards on the board**
+### Ability: [Swap]
+*Ability that changes the placement of a card or cards on the board*
 
 **Variants**
-    1. Self Swap: The card changes positions with another 
-    2. Targeted Swap two other cards switch places
-    3. Random Swap: Randomly swaps position
-    4. Continuous Swap: Swaps position every play
+
+    - Self Swap: The card changes positions with another 
+    - Targeted Swap two other cards switch places
+    - Random Swap: Randomly swaps position
+    - Continuous Swap: Swaps position every play
 
 **Example Card Texts**
     - [] [self] Swap positions with the *location* card
     - [] [self] If *condition* swap positions with the *location* card
+
+---
+
+==Very important words==
+
+
+
 
 
 Ability: [Copy]
