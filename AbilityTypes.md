@@ -21,10 +21,10 @@ Every time a card is played, it is called a drop.
     - Random Swap: Randomly swaps position
     - Continuous Swap: Swaps position every drop
 
-**Example Card Texts**
+**Game Card Texts Checklist**
 
-    - [] [self] Swap positions with the **LOCATION** card
-    - [] [self] If CONDITION swap positions with the LOCATION card
+ [] [self] Swap positions with the **LOCATION** card
+ [] [self] If CONDITION swap positions with the LOCATION card
 
 ---
 
