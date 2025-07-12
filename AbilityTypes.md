@@ -16,10 +16,10 @@ Every time a card is played, it is called a drop.
 
 **Variants**
 
-    - Self Swap: The card changes positions with another 
-    - Targeted Swap two other cards switch places
-    - Random Swap: Randomly swaps position
-    - Continuous Swap: Swaps position every drop
+    - Self Swap: The origin card changes positions with a target 
+    - Targeted Swap: The origin card swaps two target cards
+    - Random Swap: The origin card randomly swaps position
+    - Continuous Swap: The origin card swaps position every drop
 
 **Game Card Texts Checklist**
 
@@ -32,8 +32,6 @@ Every time a card is played, it is called a drop.
 *Ability that copies an attribute or multiple from another card*
 
 **Variants**
-
-    - None
 
 **Example Card Texts**
 
@@ -65,11 +63,24 @@ Every time a card is played, it is called a drop.
 
 **Example Card Texts**
 
-    - [] Transforms a target card into a *BASIC CARD* (frog, llama...)
+    - [] Transform a target card into a *BASIC CARD* (frog, llama...)
 
 ---
 
-    
+#### Ability: [Evolve]
+*Ability that transforms the origin card into something else*
+
+**Variants**
+
+    - None
+
+**Example Card Texts**
+
+    - [] when pts reduced to 0, will evolve into a dragon
+
+---
+
+
 
     - Invert
         Swaps a specific attribute, not position
@@ -149,8 +160,6 @@ Every time a card is played, it is called a drop.
         Effects to this card spread to other cards, for good or bad
     - Spike
         Gains +pts if your total is lower than opponents
-    - Evolve
-        Transforms into another form after x turns
     - Focus
         if card remains unaffected, gain +pts
     - Inspired
