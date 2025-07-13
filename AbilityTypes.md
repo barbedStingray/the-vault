@@ -4,7 +4,9 @@ The only exception is board movement cards. They pop once and then done?
 
 Every time a card is played, it is called a drop.
 
-
+---
+---
+---
 
 ## Board-Effects
 *Abilities that change placement, presence, abilities, or state of cards*
@@ -12,111 +14,223 @@ Every time a card is played, it is called a drop.
 ---
 
 #### Ability: [Swap]
-*Ability that changes the placement of a card or cards on the board*
+*Swap changes the placement of exactly two cards on the board*
 
-**Variants**
-
-    - Self Swap: The origin card changes positions with a target 
     - Targeted Swap: The origin card swaps two target cards
-    - Random Swap: The origin card randomly swaps position
-    - Continuous Swap: The origin card swaps position every drop
 
-**Game Card Texts Checklist**
+**Text**
 
-    - [] [self] Swap positions with the *LOCATION* card
-    - [] [self] If *CONDITIONs* swap positions with the *LOCATION* card
+    - [] Swap positions with the opposite card
+    - [] Swap positions with a random card in play
+    - [] Swap positions randomly for every drop
+    - [] If *CONDITIONs*, ""
+
+---
+
+#### Ability: [Invert]
+*Invert swaps only a specific attribute/s with a target card*
+
+**Text**
+    
+    - [] swap colors with the opposing card
+    - [] swap value with the opposing card
+
+---
+
+#### Ability: [Mimic]
+*Mimic replicates an entire target card without it becoming inactive*
+
+**Text**
+
+    - [] Mimics the opposing card
+    - [] mimics a card of your choice
 
 ---
 
 #### Ability: [Copy]
-*Ability that copies an attribute or multiple from another card*
+*Copy inherits a specific attribute/s from another card*
 
-**Variants**
+**Text**
 
-**Example Card Texts**
-
-    - [] Copy another cards *ATTRIBUTEs* as your own
-    - [] Copy another cards *ATTRIBUTEs* as your own for X drops
+    - [] Copy a target cards value as your own
+    - [] Copy a target cards color as your own
+    - [] Copy a target cards gender as your own
 
 ---
 
 #### Ability: [Steal]
-*Ability that steals an attribute, removing it from the targeted card*
+*Steal an attribute/s, removing it from the targeted card*
 
-**Variants**
+**Text**
 
-    - None
-
-**Example Card Texts**
-
-    - [] Steal another cards *ATTRIBUTEs* as your own
-    - [] Steal another cards *ATTRIBUTEs* as your own for X drops
+    - [] Steal a target cards ability as your own
+    - [] Steal a target cards color
+    - [] Steal a target cards value
 
 ---
 
 #### Ability: [Transform]
-*Ability that transforms a target card into a basic card*
+*Transform changes a target card into a basic card*
 
-**Variants**
+**Transform Cards**
 
-    - None
+    - Frog, Llama, Dragon...
 
-**Example Card Texts**
+**Text**
 
-    - [] Transform a target card into a *BASIC CARD* (frog, llama...)
+    - [] Transform a target card into another card
 
 ---
 
 #### Ability: [Evolve]
-*Ability that transforms the origin card into something else*
+*Evolve transforms the origin card into something else*
 
-**Variants**
-
-    - None
-
-**Example Card Texts**
+**Text**
 
     - [] when pts reduced to 0, will evolve into a dragon
 
 ---
 
+#### Ability: [Banish]
+*Banish forces a target card to become inactive*
+
+**Text**
+
+    - [] If a yellow card is in play, Banish the opposite card
+
+---
+
+#### Ability: [Imbue/Enchant]
+*Imbue assigns a random ability to a target card*
+
+**Text**
+
+    - [] If *CONDITION* acquire a random ability
 
 
-    - Invert
-        Swaps a specific attribute, not position
-    - Enchant / Imbue
-        Gain a random ability?
-    - Banish 
-        Remove card from play, can not reanimate
-    - ?? Push/Pull
-        Forces cards into different slots
+---
+---
+---
 
 
-**States - Buffs and Debuffs**
-*Positive or negative ongoing effects that apply only while the card is in play*
-*Buffs*
-    - Ascended
-        Card is unaffected by any ability
-    - Protect
-        Protects from all ailments and stat decreases.
-        Can be per play, or indefinite
-    - Immune
-        Immunne to all status affects for x plays
-    - Guard
-        Will take damage or effects in place of an ally
-    - Fortify
-        Reduces points lost from negative effects
-    - Tethered
-        Linked to another card, buffs/nerfs affect both
-    - Invisible
-        Cannot be targeted for x rounds
-    - Lucky
-        has a chance to ignore negative effects
 
-    - Endure
-        Has a chance to remove negative states each play
+## Status Effects [Buffs]
+*Abilities that apply a positive state to a card*
 
-*Debuffs*
+---
+
+#### Ability: [Ascended]
+*This status protects cards from ANY ability*
+
+**Text**
+
+    - [] Ascended. This card is not affected by ANY ability.
+    - [] Apply Ascended to a target card.
+
+---
+
+#### Ability: [Shield/Protect]
+*This status protects cards from any board effects, negative status or point deduction*
+
+**Text**
+
+    - [] Shielded.
+    - [] Apply Shielded to a target card.
+
+---
+
+#### Ability: [Immune]
+*This status protects cards from any status effect*
+
+**Text**
+
+    - [] Immune.
+    - [] Apply Immune to a target card.
+
+---
+
+#### Ability: [Ward]
+*This status protects cards from any negative point effects*
+
+**Text**
+
+    - [] Ward.
+    - [] Apply Ward to a target card.
+
+---
+
+#### Ability: [Guard]
+*This status will take damage or effects in place of an ally*
+
+**Text**
+
+    - [] Guards any neighboring card.
+    - [] Guards a target *character*
+
+---
+
+#### Ability: [Fortify]
+*This status reduces the poitns lost from negative effects*
+
+**Text**
+
+    - [] Fortify.
+    - [] Apply Fortify to a target card.
+
+---
+
+#### Ability: [Tether]
+*This status links two cards together, so that buffs/debuffs affect both*
+
+**Text**
+
+    - [] Tether this card to the opposite card.
+    - [] Tether this card to any *character*.
+
+---
+
+#### Ability: [Invisible]
+*This status does not allow for the card to be targeted by abilities*
+What happens to the ability then?
+**Text**
+
+---
+
+#### Ability: [Lucky]
+*This status has a chance to ignore negative board and negative value effects*
+
+**Text**
+
+    - [] 50% chance to reduce negative effects
+
+---
+
+#### Ability: [Endure/Resilient]
+*This status has a chance to remove negative status effects*
+
+**Text**
+
+    - [] 50% chance to remove negative status effects
+
+---
+
+## Status Effects [Debuffs]
+*Abilities that apply a negative state to a card*
+
+---
+
+#### Ability: [Endure/Resilient]
+*This status has a chance to remove negative status effects*
+
+**Text**
+
+    - [] 50% chance to remove negative status effects
+
+---
+
+
+
+
     - Silence
         Blocks an ability from being used
     - Poison
@@ -180,6 +294,8 @@ Every time a card is played, it is called a drop.
         +3 this turn, -2 the next
     - Siphon (stealing set pts / play?)
         converts the difference between this card and target card into bonus points
+    - Unlimited / Extra
+        Can have duplicate characters in play
 
 
 **Exit/Inactive Effects**
@@ -223,3 +339,11 @@ gains points every time a card is burned
 
 Decay Boost - Gains points for every point lost to decay
 Poison Boost - Gains points for poison damage dealt
+
+
+
+
+QUESTIONABLE ABILITIES
+
+    - ?? Push/Pull
+        Forces cards into different slots
